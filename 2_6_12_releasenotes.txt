@@ -1,0 +1,5 @@
+* Incorporated the patch from Olivier for improved reading of headers and footers
+* Added the facility to make cells read only by using the formula ="". Had to change the setDataValidationRange function to accept empty strings
+* Fixed a bug whereby adding an image messed up data validation - had to explicitly add in a combo box drawing when data validation is present
+* Added null check for DVParser in addCell method in RowRecord
+* Improved the handling for skipping unsupported object types: read the unprocessed records and added them to the drawing data so that it prevented the system from crashing
